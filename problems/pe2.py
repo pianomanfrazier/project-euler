@@ -4,11 +4,12 @@ print("Project Euler problem #2")
 
 
 def fib(n):
-    num=0
-    if n==1 or n==0:
+    num = 0
+    if n == 1 or n == 0:
         return 1
     else:
-        num=fib(n-1)+fib(n-2)
+        # variable for debugging
+        num = fib(n - 1) + fib(n - 2)
         return num
 
 
@@ -28,4 +29,3 @@ while num < 4000000:
 # find the sum of all even fib numbers < 4,000,000
 even_fibs = list(filter(is_even, fib_numbers))
 print(sum(even_fibs))
-print(fib(10))
